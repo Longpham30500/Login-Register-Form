@@ -1,0 +1,116 @@
+$color_1: #333;
+$color_2: #636d77;
+$color_3: #f33a58;
+$color_4: #fff;
+$font-family_1: "Open Sans", sans-serif;
+$background-color_1: #1dbfaf;
+$background-color_2: #1ac7b6;
+$border-color_1: #1dbfaf;
+$border-color_2: #f33a58;
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	color: $color_1;
+	font-size: 62.5%;
+	font-family: $font-family_1;
+}
+.main {
+	background: #f1f1f1;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+}
+.form {
+	width: 360px;
+	min-height: 100px;
+	padding: 32px 24px;
+	text-align: center;
+	background: #fff;
+	border-radius: 2px;
+	margin: 24px;
+	align-self: center;
+	box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+	.heading {
+		font-size: 2rem;
+	}
+	.desc {
+		text-align: center;
+		color: $color_2;
+		font-size: 1.6rem;
+		font-weight: lighter;
+		line-height: 2.4rem;
+		margin-top: 16px;
+		font-weight: 300;
+	}
+	.link{
+		font-size: 14px;
+		padding-top: 10px;
+		display: block;
+		color: $color_2;
+		a{
+			text-decoration: none;
+			color: rgba(0, 149, 246);
+		}
+	}
+}
+.form-group {
+	display: flex;
+	margin-bottom: 16px;
+	flex-direction: column;
+}
+
+.form-label {
+	text-align: left;
+	font-weight: 700;
+	padding-bottom: 6px;
+	line-height: 1.8rem;
+	font-size: 1.4rem;
+}
+.form-message {
+	text-align: left;
+	font-size: 1.2rem;
+	line-height: 1.6rem;
+	padding: 4px 0 0;
+}
+.form-control {
+	height: 40px;
+	padding: 8px 12px;
+	border: 1px solid #b3b3b3;
+	border-radius: 3px;
+	outline: none;
+	font-size: 1.4rem;
+	&:hover {
+		border-color: $border-color_1;
+	}
+}
+.form-group.invalid {
+	.form-control {
+		border-color: $border-color_2;
+	}
+	.form-message {
+		color: $color_3;
+	}
+}
+.form-submit {
+	outline: none;
+	background-color: $background-color_1;
+	margin-top: 12px;
+	padding: 12px 16px;
+	font-weight: 600;
+	color: $color_4;
+	border: none;
+	width: 100%;
+	font-size: 14px;
+	border-radius: 8px;
+	cursor: pointer;
+	&:hover {
+		background-color: $background-color_2;
+	}
+}
+.spacer {
+	margin-top: 36px;
+}
